@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:layout_toStartOf="@+id/right_view"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:id="@+id/text_fname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="First Name"
+                android:textSize="17sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+            <TextView
+                android:id="@+id/text_lname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:layout_marginStart="5dp"
+                android:maxLines="1"
+                android:text="Last Name"
+                android:textSize="17sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:layout_marginLeft="5dp" />
+
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/text_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/right_view"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_gravity="end"
+        android:layout_alignParentEnd="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_edit"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/img_edit"
+            app:tint="@color/black"/>
+
+        <ImageView
+            android:id="@+id/img_delete"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/img_delete"
+            app:tint="@color/black"/>
+    </LinearLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

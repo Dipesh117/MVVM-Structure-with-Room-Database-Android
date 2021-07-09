@@ -1,0 +1,2 @@
+rootProject.name = "RoomDatabase with MVVM"
+include ':app'
